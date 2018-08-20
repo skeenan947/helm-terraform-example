@@ -1,0 +1,15 @@
+image:
+  tag: latest
+ingress:
+  enabled: true
+  hosts:
+  - api.fastcast.net
+app:
+  chart:
+    repo: skvid
+  helm:
+    user: admin
+    pass: password
+  ingress:
+    class: traefik
+    domain: video.fastcast.net

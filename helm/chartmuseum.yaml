@@ -1,0 +1,15 @@
+env:
+  open:
+    STORAGE: google
+    STORAGE_GOOGLE_BUCKET: vidcharts
+    STORAGE_GOOGLE_PREFIX: 
+    DISABLE_API: false
+    BASIC_AUTH_USER: admin
+    BASIC_AUTH_PASS: password
+    AUTH_ANONYMOUS_GET: true
+## Ingress for load balancer
+ingress:
+  enabled: true
+  hosts:
+    charts.ops.fastcast.net:
+      - /

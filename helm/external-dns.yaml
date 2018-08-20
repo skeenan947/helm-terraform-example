@@ -1,0 +1,13 @@
+rbac:
+  create: false
+policy: upsert-only
+txtOwnerId: 'fastcast'
+domainFilters:
+  - fastcast.net
+sources: 
+  - service
+  - ingress
+registry: txt
+provider: google
+google:
+  project: vidcdn-201105

@@ -1,0 +1,16 @@
+serviceType: LoadBalancer
+ssl:
+  enabled: true
+  enforced: false
+rbac:
+  enabled: false
+deployment:
+  hostPort:
+    httpEnabled: true
+    dashboardEnabled: true
+    httpsEnabled: true
+acme:
+  enabled: true
+  email: support@fastcast.net
+  logging: true
+  challengeType: http-01
